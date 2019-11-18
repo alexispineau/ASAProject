@@ -17,26 +17,33 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Configuration/interfaces"/>
     </genClasses>
     <genClasses ecoreClass="projetASAEcore.ecore#//Composant">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Composant/interfaces"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projetASAEcore.ecore#//Composant/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Composant/configuration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Composant/composantinterface"/>
     </genClasses>
-    <genClasses ecoreClass="projetASAEcore.ecore#//Connecter">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Connecter/glue"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projetASAEcore.ecore#//Connecter/name"/>
+    <genClasses ecoreClass="projetASAEcore.ecore#//Connector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Connector/glue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projetASAEcore.ecore#//Connector/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Connector/binding"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Connector/connectorinterface"/>
     </genClasses>
     <genClasses ecoreClass="projetASAEcore.ecore#//Interface"/>
-    <genClasses ecoreClass="projetASAEcore.ecore#//Port"/>
+    <genClasses ecoreClass="projetASAEcore.ecore#//Port">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Port/output"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Port/input"/>
+    </genClasses>
     <genClasses ecoreClass="projetASAEcore.ecore#//Service">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Service/port"/>
     </genClasses>
-    <genClasses ecoreClass="projetASAEcore.ecore#//Attachement">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Attachement/role"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Attachement/port"/>
+    <genClasses ecoreClass="projetASAEcore.ecore#//Role">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Role/output"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetASAEcore.ecore#//Role/input"/>
     </genClasses>
-    <genClasses ecoreClass="projetASAEcore.ecore#//Role"/>
     <genClasses ecoreClass="projetASAEcore.ecore#//Glue"/>
     <genClasses ecoreClass="projetASAEcore.ecore#//Input"/>
     <genClasses ecoreClass="projetASAEcore.ecore#//Output"/>
+    <genClasses ecoreClass="projetASAEcore.ecore#//ComposantInterface"/>
+    <genClasses ecoreClass="projetASAEcore.ecore#//ConnectorInterface"/>
+    <genClasses ecoreClass="projetASAEcore.ecore#//Binding"/>
   </genPackages>
 </genmodel:GenModel>
